@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfoli Roger Munmany</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="../imatges/altres/icono_roger.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../imatges/altres/icono_roger.ico">
+    
+    
+    
+    
+    
+    
+    
+     <script src="../js/jquery.js" >  </script>
+ <script src="../js/mediaelement-and-player.js"></script>
+  <link href="../css/mediaelementplayer.css" rel="stylesheet">
+  <link href="../css/mejs-controls.svg" rel="stylesheet">
+  
+     
+    <link rel="stylesheet" href="../css/style.css">
+  
+  
+  
+  <!-- plugins -->
+     <script src="../plugins/skip-back-i18n.js" rel="stylesheet"> </script>
+     <script src="../plugins/skip-back.js" rel="stylesheet"></script>
+     <script src="../plugins/skipback.svg" rel="stylesheet"> </script>
+  <link href="../plugins/skip-back.css" rel="stylesheet">
+  
+  
+  
+     <script src="../plugins/plugins/jump-forward-i18n.js" rel="stylesheet"> </script>
+          <script src="plugins/jump-forward.js" rel="stylesheet"> </script>
+           
+     <script src="plugins/jumpforward.svg"rel="stylesheet"> </script>
+      <link href="plugins/jump-forward.css" rel="stylesheet">
+      
+      
+    
+     
+     
+     
+   
+   <!--  -->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="menuilustracionbox">
+            <ul id="menuilustracion">
+                <li> <a href="../index.html" title="Portfoli"> Inicio </a> </li>
+
+                <li> <a href="../como_soy/comosoy.html" title="como soy">Cómo soy</a> </li>
+                <li>
+                    <a href="../contacto/contacto.html" title="Enlace genérico">Contacto</a></li>
+            </ul>
+        </div>
+
+
+        <title>Animación</title>
+        <h1> <b> Animación</b></h1>
+        <h2> Trabajos </h2>
+  
+        <br>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .clearfix {
+                overflow: auto;
+            }
+
+            .container {
+                width: 75%;
+                margin: auto;
+                border: 1px solid red;
+                box-sizing: content-box;
+                text-align: center;
+            }
+
+            .container-display {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                /*indicador*/
+                 
+                padding:10px;
+                margin: 50px;
+                border: 5px groove  red;
+                -webkit-border-radius: 9px 9px 9px 9px;
+                border-radius: 9px 9px 9px 9px;
+
+            }
+
+            .container-text {
+                text-align: left;
+                /*indicador*/
+                margin: 5px;
+                border: 1px dashed purple;
+            }
+
+            .boton-slider {
+                width: 30px;
+                height: 30px;
+                background-color: grey;
+            }
+
+            .boton-slider:hover {
+                width: 30px;
+                height: 30px;
+                background-color: ghostwhite;
+            }
+
+            .fletxaDreta-slider {
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                transform: translate(0%, -50%);
+                */
+            }
+
+            .fletxaEsquerra-slider {
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                transform: translate(0%, -50%);
+            }
+
+
+            .mySlides {
+                margin: auto;
+                display: none;
+            }
+
+        </style>
+
+        <body>
+
+            <div class="container-display">
+                  <video controls class="mySlides" width="720" height="420"      poster="../imatges/animacio/conill.JPG">  
+       
+     <source src="../imatges/animacio/video_reel_Roger_Munmany.mp4" type="video/mp4">
+      <source src="../imatges/animacio/Videoreal.webm" type="video/webm">       
+       <track label="Català" kind="subtitles" srclang="cat" src="subtitulos/subtitol.vtt" default>
+        
+         
+         
+        
+                </video>
+                  <video class="mySlides" controls width="720" height="420"      poster="../imatges/animacio/wall-e">  
+       
+     <source src="../imatges/animacio/Escena_Wall-E_Roger_Munmany.mp4" type="video/mp4">
+      <source src="../imatges/animacio/Escena_Wall-E_Roger_Munmany.webm" type="video/webm">       
+       <track label="Català" kind="subtitles" srclang="cat" src="subtitulos/subtitol.vtt" default>  
+         
+    
+    </video>   
+  <video class="mySlides" controls width="720" height="420"      poster="../imatges/animacio/runing.jpg">  
+       
+     <source src="../imatges/animacio/merry_34_run.mp4" type="video/mp4">
+      <source src="../imatges/animacio/merry_34_run.webm" type="video/webm">       
+       <track label="Català" kind="subtitles" srclang="cat" src="subtitulos/subtitol.vtt" default>  
+         
+    
+    </video> 
+                <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <!--Script JS-->
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+                  
+      $('video').mediaelementplayer({  features: ['playpause', 'tracks', 'progress', 'skipback', 'fullscreen', 'jumpforward', 'speed', 'quality', 'volume', ], jumpForwardInterval: 5, skipBackInterval: 5, /*Definim l'ordre i els elements que es veuran al navegador*/ });    Language: 'en'; alwaysShowHours: true; timeFormat: 'h:mm:ss'; 
+         
+   
+
+
+            </script>
+
+    </div>
+</body>
+
+
+</html>
+
+    
+    
+    

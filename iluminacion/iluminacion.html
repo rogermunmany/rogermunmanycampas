@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfoli Roger Munmany</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="../imatges/altres/icono_roger.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../imatges/altres/icono_roger.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="menuiluminabox">
+            <ul id="menuilumina">
+                <li> <a href="../index.html" title="Portfoli"> Inicio </a> </li>
+
+                <li> <a href="../como_soy/comosoy.html" title="como soy">Cómo soy</a> </li>
+                <li>
+                    <a href="../contacto/contacto.html" title="Enlace genérico">Contacto</a></li>
+            </ul>
+        </div>
+
+
+        <title>Iluminación</title>
+        <h1> <b> Iluminación</b></h1>
+        <h2> Trabajos </h2>
+        <br>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .clearfix {
+                overflow: auto;
+            }
+
+            .container {
+                width: 75%;
+                margin: auto;
+                border: 1px solid red;
+                box-sizing: content-box;
+                text-align: center;
+            }
+
+            .container-display {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                /*indicador*/
+                 
+                padding:10px;
+                margin: 50px;
+                border: 5px groove  red;
+                -webkit-border-radius: 9px 9px 9px 9px;
+                border-radius: 9px 9px 9px 9px;
+
+            }
+
+            .container-text {
+                text-align: left;
+                /*indicador*/
+                margin: 5px;
+                border: 1px dashed purple;
+            }
+
+            .boton-slider {
+                width: 30px;
+                height: 30px;
+                background-color: grey;
+            }
+
+            .boton-slider:hover {
+                width: 30px;
+                height: 30px;
+                background-color: ghostwhite;
+            }
+
+            .fletxaDreta-slider {
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                transform: translate(0%, -50%);
+                */
+            }
+
+            .fletxaEsquerra-slider {
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                transform: translate(0%, -50%);
+            }
+
+
+            .mySlides {
+                display: none;
+            }
+
+        </style>
+
+        <body>
+
+            <div class="container-display">
+                
+                <img class="mySlides" src="../imatges/iluminacion/alien.jpeg" style="width:100%">
+                
+                <img class="mySlides" src="../imatges/iluminacion/cristal_enfoque.jpg" style="width: 100%">
+                <img class="mySlides" src="../imatges/iluminacion/imatge_sense_llum.jpeg" style="width: 100%">
+                <img class="mySlides" src="../imatges/iluminacion/img_1_3.jpeg"style="width:100%">
+                <img class="mySlides" src="../imatges/iluminacion/ca_complete.jpeg" style="width:100%">
+                <img class="mySlides" src="../imatges/iluminacion/5_spotlight.jpeg" style="width: 100%">
+                <img class="mySlides" src="../imatges/iluminacion/drac_blau.jpeg" style="width:100%">
+
+                <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <!--Script JS-->
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+
+            </script>
+
+    </div>
+</body>
+
+
+</html>
